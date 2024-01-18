@@ -1,0 +1,223 @@
+[
+  {
+    "id": 0,
+    "title": "首页(常规)",
+    "icon": "icon-menu",
+    "link": "/home/homePageCommonRule"
+  },
+  {
+    "id": 1,
+    "title": "首页(新能源)",
+    "icon": "icon-menu",
+    "link": "/home/homePageNewEnergy"
+  },
+  {
+    "id": 2,
+    "title": "实时告警",
+    "icon": "setting",
+    "link": "/home/realTimeAlarm"
+  },
+  {
+    "id": 3,
+    "title": "AGC考核与补偿",
+    "icon": "setting",
+    "children": [
+      {
+        "id": 1,
+        "text": "可用率考核与补偿",
+        "link": "/home/agcAvailableRateExam"
+      },
+      {
+        "id": 2,
+        "text": "投退频次考核(常规)",
+        "link": "/home/agcInputExitTimesExam"
+      },
+      {
+        "id": 3,
+        "text": "贡献电量合格率考核(新能源)",
+        "link": "/home/agcGxdlPassPercentExamNewEnergy"
+      },
+      {
+        "id": 4,
+        "text": "响应时间考核(新能源)",
+        "link": "/home/agcResponseTimeExamNewEnergy"
+      },
+      {
+        "id": 5,
+        "text": "响应时间考核(常规)",
+        "link": "/home/agcResponseTimeExamCommonRule"
+      },
+      {
+        "id": 6,
+        "text": "调节速率考核(常规)",
+        "link": "/home/agcAdjustRateExamCommonRule"
+      },
+      {
+        "id": 7,
+        "text": "贡献电量合格率补偿",
+        "link": "/home/agcGxdlPowerPowerRateCompensation"
+      },
+      {
+        "id": 8,
+        "text": "AGC原始数据",
+        "link": "/home/agcRawData"
+      }
+    ]
+  },
+
+  {
+    "id": 4,
+    "title": "日发电计划考核",
+    "icon": "setting",
+    "children": [
+      {
+        "id": 1,
+        "text": "日发电计划考核",
+        "link": "/home/dailyPowerExam"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "有偿调峰与顶峰能力",
+    "icon": "setting",
+    "children": [
+      {
+        "id": 1,
+        "text": "顶峰能力考核",
+        "link": "/home/peakCompetencyExam"
+      },
+      {
+        "id": 2,
+        "text": "受阻电力考核",
+        "link": "/home/blockedPowerAssessment"
+      },
+      {
+        "id": 3,
+        "text": "有偿调峰服务补偿",
+        "link": "/home/compensationPaidPeakTrimmingService"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "功率预测考核",
+    "icon": "setting",
+    "children": [
+      {
+        "id": 1,
+        "text": "短期功率预测",
+        "link": "/home/shortPowerPrediction"
+      },
+      {
+        "id": 2,
+        "text": "超短期功率预测",
+        "link": "/home/superShortPowerPrediction"
+      },
+      {
+        "id": 3,
+        "text": "可用功率偏差",
+        "link": "/home/availablePowerDeviation"
+      },
+      {
+        "id": 4,
+        "text": "功率预测原始数据",
+        "link": "/home/powerPredictionRawData"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "一次调频考核与补偿",
+    "icon": "setting",
+    "children": [
+      {
+        "id": 1,
+        "text": "一次调频考核",
+        "link": "/home/oneFmCheck"
+      },
+      {
+        "id": 2,
+        "text": "大频差扰动考核",
+        "link": "/home/oneFmBigFrequencyCheck"
+      },
+      {
+        "id": 3,
+        "text": "贡献电量补偿",
+        "link": "/home/oneFmContributionPowerCompensation"
+      },
+      {
+        "id": 4,
+        "text": "一次调频原始数据",
+        "link": "/home/oneFmRawData"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "AVC考核与补偿",
+    "icon": "setting",
+    "children": [
+      {
+        "id": 1,
+        "text": "投运率考核",
+        "link": "/home/avcInputExitRateExam"
+      },
+      {
+        "id": 2,
+        "text": "合格率考核",
+        "link": "/home/avcPassPercentExam"
+      },
+      {
+        "id": 3,
+        "text": "AVC补偿",
+        "link": "/home/avcCompensation"
+      },
+      {
+        "id": 4,
+        "text": "AVC原始数据",
+        "link": "/home/avcRawData"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "有偿无功补偿",
+    "icon": "setting",
+    "children": [
+      {
+        "id": 1,
+        "text": "有偿无功补偿",
+        "link": "/home/compensationIdleWork"
+      },
+      {
+        "id": 2,
+        "text": "无功原始数据",
+        "link": "/home/idleWorkRawData"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "统计分析",
+    "icon": "setting",
+    "children": [
+      {
+        "id": 1,
+        "text": "月度综合统计",
+        "link": "/home/monthlyGeneralStatic"
+      },
+      {
+        "id": 2,
+        "text": "月度统计",
+        "link": "/home/sumAnalysis"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "手动计算",
+    "icon": "icon-menu",
+    "link": "/home/handCalculation"
+  }
+]

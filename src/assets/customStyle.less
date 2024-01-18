@@ -1,0 +1,196 @@
+#energySystem {
+  // 全局自定义样式  + elementPlus默认样式修改
+  --height-60: 60px;
+  --background: #fff;
+  --backgroundBlack: #000;
+  --background3c: #ccc;
+  --background3d: #ddd;
+  --backgrounde5: #e5e5e5;
+  --backgroundBoxF9: #f9f9f9;
+  --colorWhite: #fff;
+  --colorRed: #d7231d;
+  --colorGold: #e2d58c;
+  --color333: #333;
+  --color666: #666;
+  --font-size14: 14px;
+  --font-size13: 13px;
+  --font-size12: 12px;
+  --height-200: 200px;
+  --height-300: 300px;
+  .colorRed {
+    color: var(--colorRed);
+  }
+  .backgroundRed {
+    background: var(--colorRed);
+    color: var(--background);
+  }
+  .colorGold {
+    color: var(--colorGold);
+  }
+
+  :deep(.el-select-dropdown__list) {
+    background: #e8e9d9;
+    margin: 0;
+  }
+  :deep(.el-select-dropdown__item.hover, .el-select-dropdown__item:hover) {
+    background: #afa25f;
+  }
+  :deep(
+      .el-select-dropdown__list .el-select-dropdown__item.hover,
+      .el-select-dropdown__item:hover
+    ) {
+    background-color: #afa25f;
+  }
+
+  // 顶部消息条数背景
+  :deep(.el-badge__content.el-badge__content--danger) {
+    background: var(--colorRed);
+  }
+  // button-group
+  :deep(.el-radio-group .el-radio-button.is-active) {
+    background: var(--colorRed);
+  }
+  :deep(.el-radio-group .el-radio-button .el-radio-button__inner:hover, ) {
+    color: var(--colorRed);
+  }
+
+  :deep(.el-radio-button__original-radio:checked + .el-radio-button__inner) {
+    background: var(--colorRed);
+    border-color: var(--colorRed);
+    box-shadow: -1px 0 0 0 var(--colorRed);
+  }
+  :deep(.el-radio-group .el-radio-button__original-radio:checked + .el-radio-button__inner:hover) {
+    color: var(--colorWhite);
+  }
+  // 侧边栏menu
+  :deep(.el-menu.el-menu--inline) {
+    background: var(--background3c);
+  }
+  :deep(.el-menu-item.menuTitle) {
+    background: var(--background3d);
+    padding: 0 0 0 5px;
+    font-size: var(--font-size13);
+    font-weight: bold;
+  }
+  :deep(.el-menu-item) {
+    padding-left: 33px;
+    letter-spacing: 0px;
+  }
+  :deep(.el-menu-item.is-active) {
+    background: var(--color333);
+    color: var(--colorGold);
+    border-bottom: 2px solid var(--colorRed);
+    animation: slideLeftToRight 0.5s linear;
+  }
+  @keyframes slideLeftToRight {
+    from {
+      width: 0;
+      opacity: 0;
+      border-bottom: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+
+      border-bottom: 2px solid var(--colorRed);
+    }
+  }
+  :deep(.el-sub-menu__title) {
+    background: var(--background3d);
+    padding: 0 0 0 5px;
+    font-size: var(--font-size13);
+    font-weight: bold;
+  }
+  :deep(.el-menu-item-group__title) {
+    padding: 0;
+    .el-menu-item a {
+      font-size: var(--font-size12);
+    }
+  }
+  // :deep(.el-sub-menu .el-icon) {
+  //   margin-right: 0;
+  // }
+  // 分页pagination背景色
+  :deep(.el-pagination .el-pager li.is-active) {
+    background: var(--colorRed);
+  }
+  // 表格table
+  :deep(tbody .el-table__cell .tableEdit) {
+    color: var(--colorRed);
+    cursor: pointer;
+  }
+  :deep(.el-table .cell) {
+    padding: 0 2px 0 10px;
+    white-space: nowrap;
+    // width: fit-content;
+  }
+  .el-table :deep(th) {
+    padding: 0;
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+
+  .el-table :deep(td) {
+    padding: 1px;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  :deep(.el-table td.el-table__cell:nth-last-child(1) div) {
+    cursor: pointer;
+  }
+  :deep(.el-table__header thead tr th.el-table__cell.is-leaf) {
+    background: var(--backgrounde5);
+    color: #3b3b3b;
+  }
+  // 暂无数据时居中显示
+  :deep(.el-scrollbar .el-scrollbar__wrap .el-scrollbar__view) {
+    height: 100%;
+  }
+  // 弹窗dialog
+  :deep(.el-overlay .el-dialog__body) {
+    padding: 0 10px 20px;
+  }
+  //input
+  :deep(.el-input__wrapper.is-focus) {
+    background: #e8e9d9;
+    color: #3b3b3b;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px var(--colorRed) inset;
+  }
+  :deep(.el-select .el-input.is-focus .el-input__wrapper) {
+    box-shadow: 0 0 0 1px var(--colorRed) inset !important;
+    padding: 0 11px;
+  }
+  :deep(.el-select .el-input__wrapper.is-focus) {
+    // border: 1px solid var(--colorRed);
+    box-shadow: 0 0 0 1px var(--colorRed) inset !important;
+    box-sizing: border-box;
+  }
+  :deep(.el-range-editor.is-active:hover) {
+    // border: 1px solid var(--colorRed);
+    box-shadow: 0 0 0 1px var(--colorRed) inset !important;
+    box-sizing: border-box;
+  }
+  
+
+  // 自定义table,统一样式
+  table.calculateTable {
+    border: 1px solid #ebeef5;
+    border-collapse: collapse;
+    color: #606266;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    tr {
+      &:nth-child(1) {
+        background: #e5e5e5;
+      }
+      td {
+        border: 1px solid #ebeef5;
+        border-collapse: collapse;
+        padding: 8px 10px;
+      }
+    }
+  }
+}
